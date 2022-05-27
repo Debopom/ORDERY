@@ -1,0 +1,25 @@
+#nav_up {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    justify-content: center;
+    background-color: #FF8A33;
+    border-radius: 10px;
+}
+
+#nav_up_full_box {
+    background-color: #FF8A33;
+}
+
+#nav_item {
+    font-weight: bold;
+    /* color: white; */
+}
+
+#navbarNavAltMarkup {
+    background-color: #FF8A33;
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    justify-content: center;
+}

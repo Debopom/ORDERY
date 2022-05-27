@@ -1,0 +1,56 @@
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#" style="color: brown ;font-weight: bold;">Ordery</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-mdb-toggle="collapse"
+          data-mdb-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../../landing" >Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../instascan-master/docs/">Order</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../history.php">History</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../restaurant_search.php">Reservation</a>
+            </li>
+            
+            <li class="nav-item">
+              <form action="search.php" method="post">  
+                 <input type="text" style=" width: 300px;
+                box-sizing: border-box;
+                border: 2px solid #ccc;
+                border-radius: 4px;
+                margin-left: 20px;
+                font-size: 12px;
+                background-color: white;
+                background-image: url('searchicon.png');
+                background-position: 10px 10px; 
+                background-repeat: no-repeat;
+                padding: 10px 10px 10px 20px;
+                transition: width 0.4s ease-in-out;
+              " name="search" placeholder="Search Restaurant "
+                >
+                <input type="submit" name="submit" value="Search"style=" width: 100px;"class="btn btn-outline-primary">
+              
+              </form>
+             
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
