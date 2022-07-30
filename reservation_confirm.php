@@ -29,5 +29,9 @@
       //Execute Query And insert into the db
       $rs = $conn-> query($sql);
       //Query ok or not
+
+      if($rs){
+        echo '<script>alert("Reservation requested"); window.location.replace("restaurant_search.php")</script>'; 
+    }
     
 ?>

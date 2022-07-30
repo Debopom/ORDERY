@@ -46,8 +46,9 @@
         $rs1 = $conn-> query($sql1);
         $data1 =mysqli_fetch_array($rs1);
         $table_type =  $data1['table_type'];
+        $today = date("Y-m-d H:i:s");
 
-        $sql = "INSERT INTO orders (order_status,customer_id,details,restaurant_id,total_price , table_id,order_type) VALUES ('pending',$customer_id, '$details' , $restaurant_id , $total_price ,$table_id,'$table_type'); ";
+        $sql = "INSERT INTO orders (order_status,customer_id,details,restaurant_id,total_price , table_id,order_type,order_date) VALUES ('pending',$customer_id, '$details' , $restaurant_id , $total_price ,$table_id,'$table_type', '$today'); ";
         $rs = $conn->query($sql);
         if ($rs) {
         ?> <div class="text-center my-4">

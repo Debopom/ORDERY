@@ -14,8 +14,36 @@
         include 'navbar.html';
 
         session_start();
-
+        error_reporting(0);
         include_once 'dbconnect.php';
+        $invite_id = $_POST['invite_id'];
+        $sqldlt = "DELETE FROM share WHERE invite_id = $invite_id";
+        if(isset($_POST["accept"])){
+       
+           $rsdlt = $conn-> query($sqldlt); 
+       
+        }
+
+        ?><form align="center" action="share.php" method="post"> 
+                Please enter email to share your table with your loved ones: <br>
+                 <input type="text" style=" width: 300px;
+                box-sizing: border-box;
+                border: 2px solid #ccc;
+                border-radius: 4px;
+                margin-left: 20px;
+                font-size: 12px;
+                background-color: white;
+                background-image: url('searchicon.png');
+                background-position: 10px 10px; 
+                background-repeat: no-repeat;
+                padding: 10px 10px 10px 20px;
+                transition: width 0.4s ease-in-out;
+              " name="email" placeholder="Please enter email"
+                >
+                <input type="submit" name="submit" value="Share"style=" width: 100px;"class="btn btn-outline-primary">
+              
+              </form>
+              <?php
         $qr = $_POST['qr'];
         $_SESSION["table_id"] = $qr;
         
